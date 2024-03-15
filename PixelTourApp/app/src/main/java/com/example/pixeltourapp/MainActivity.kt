@@ -45,11 +45,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Mapa::class.java)
             startActivity(intent)
         }
-        btnChatbot.setOnClickListener {
-            // Código para abrir la pantalla de ajustes
-            val intent = Intent(this, Chatbot::class.java)
-            startActivity(intent)
-        }
         btnBuscador.setOnClickListener {
             // Código para abrir la pantalla de ajustes
             val intent = Intent(this, Buscador::class.java)
