@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "949211501291",
+    "project_id": "flowmodoro-1313e",
+    "storage_bucket": "flowmodoro-1313e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949211501291:android:ef61a0fedbb54ee59ea4ae",
+        "android_client_info": {
+          "package_name": "com.example.flowmodor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949211501291-jabfsjfsj095qvqm6eprp4bnar611tkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAx5_YrNzUB6ejrZVWQPn8-ZhO7KbRZJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949211501291-jabfsjfsj095qvqm6eprp4bnar611tkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

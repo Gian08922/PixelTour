@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FlowModor" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!--Barra de estado -->
+        <item name="android:statusBarColor">@color/cremaFlow</item>
+        <!--Action bar de la app-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- Hecho por Alba -->
+    <style name="BotonesRadio" parent="Widget.AppCompat.CompoundButton.RadioButton">
+
+    </style>
+</resources>

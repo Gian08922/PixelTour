@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blancoFlow"
+    tools:context=".ConcentracionActivity">
+
+
+
+    <!-- Componente AppBarLayout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/estudioLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:background="@color/blancoFlow">
+
+
+
+        <!-- Icono de ajustes y fecha y hora -->
+
+        <!-- Componente LinearLayout para la fecha y la imagen de ajustes -->
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/ajustesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:background="@color/cremaFlow"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@color/cremaFlow"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo"
+                app:layout_scrollFlags="scroll|enterAlways" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="411dp"
+            android:layout_height="72dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ajustesLayout"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints">
+
+            <!-- Fecha -->
+            <TextView
+                android:id="@+id/textView_date"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/comicneue_light"
+                android:text="10/04/2023"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_home"
+                android:layout_width="288dp"
+                android:layout_height="63dp"
+                android:layout_gravity="bottom"
+                android:padding="5dp"
+                android:src="@drawable/home" />
+
+        </LinearLayout>
+
+        <!-- Componente para seleccionar método             -->
+        <!-- LinearLayout para elegir método de estudio -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="644dp"
+            android:orientation="vertical">
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/idGraphView"
+                android:layout_width="305dp"
+                android:layout_height="374dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/comicneue_regular"
+                    android:text="Método más usado:"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/MetodoSesionCon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="-1dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/MetodoSesionCon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="84dp"
+                    android:fontFamily="@font/comicneue_bold"
+                    android:text="TextView"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comicneue_regular"
+                    android:text="Tu mejor método:"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/NotaCon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comicneue_bold"
+                    android:text="TextView"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.231"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

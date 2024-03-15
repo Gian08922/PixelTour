@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="0dp"
+    android:background="@color/blancoFlow"
+    tools:context=".EstudioActivity">
+
+    <!-- Componente AppBarLayout -->
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ajustesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/cremaFlow"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@color/cremaFlow"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!-- Fecha -->
+
+    <!-- Componente AppBarLayout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/estudioLayout"
+        android:layout_width="393dp"
+        android:layout_height="739dp"
+        android:layout_marginTop="99dp"
+        android:background="@color/blancoFlow"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!-- Icono de ajustes y fecha y hora -->
+
+        <!-- Componente LinearLayout para la fecha y la imagen de ajustes -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Fecha -->
+            <TextView
+                android:id="@+id/textView_dateEstudio"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/comicneue_light"
+                android:text="10/04/2023"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_homeEstudio"
+                android:layout_width="244dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/home" />
+
+        </LinearLayout>
+
+        <!-- Componente para seleccionar método      -->
+        <!-- LinearLayout para elegir método de estudio -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="679dp"
+            android:elevation="0dp"
+            android:orientation="vertical">
+
+            <!-- Texto "Elegir método de estudio" -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/comicneue_light"
+                android:text="¡Elige tu método de estudio!"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tituloSel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/comicneue_bold"
+                android:text="FLOWMODORO"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="241dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/flechaIzq"
+                    android:layout_width="47dp"
+                    android:layout_height="63dp"
+                    android:layout_marginLeft="20dp"
+
+                    app:srcCompat="@drawable/flechitaizq" />
+
+                <ImageView
+                    android:id="@+id/botonSel"
+                    android:layout_width="232dp"
+                    android:layout_height="221dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="45px"
+                    app:srcCompat="@drawable/flowmodoro_image" />
+
+                <ImageView
+                    android:id="@+id/flechaDer"
+                    android:layout_width="47dp"
+                    android:layout_height="63dp"
+                    android:layout_marginLeft="15dp"
+
+                    app:srcCompat="@drawable/flechitader" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgSel"
+                android:layout_width="168dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="5px"
+                app:srcCompat="@drawable/metodo1sel" />
+
+            <ImageView
+                android:id="@+id/textoSeleccionado"
+                android:layout_width="285dp"
+                android:layout_height="109dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15px"
+                app:srcCompat="@drawable/ii_textoflowmodoro" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

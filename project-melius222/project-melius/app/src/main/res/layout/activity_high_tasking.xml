@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HighTaskingActivity">
+
+
+
+  <!-- Componente AppBarLayout -->
+  <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/estudioLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/cremaFlow"
+      android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+
+    <ImageView
+        android:id="@+id/btn_homeEstudio"
+        android:layout_width="73dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="20px"
+        android:src="@drawable/home" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="790dp"
+        android:orientation="vertical">
+
+      <!-- Texto "Elegir método de estudio" -->
+
+
+      <TextView
+          android:id="@+id/titulo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="100px"
+          android:text="HIGH TASKING"
+          android:fontFamily="@font/comicneue_bold"
+          android:layout_gravity="center"
+          android:textAlignment="center"
+          android:textSize="50dp" />
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="328dp">
+
+        <ImageView
+            android:id="@+id/temporizador"
+            android:layout_width="420dp"
+            android:layout_height="329dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tomate_reloj" />
+
+        <TextView
+            android:id="@+id/temporizador_texto"
+            android:layout_width="293dp"
+            android:layout_height="254dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/blancoFlow"
+            android:textSize="110sp"
+            app:layout_constraintBottom_toBottomOf="@id/temporizador"
+            app:layout_constraintEnd_toEndOf="@id/temporizador"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="@id/temporizador"
+            app:layout_constraintTop_toTopOf="@id/temporizador"
+            app:layout_constraintVertical_bias="1.0" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textoSelID"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Ronda 1"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:textSize="50dp" />
+
+        <ImageView
+            android:id="@+id/BotInicioPausa"
+            android:layout_width="112dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/binicio" />
+      </LinearLayout>
+
+      <ImageView
+          android:id="@+id/botOtroMetodo"
+          android:layout_width="295dp"
+          android:layout_height="102dp"
+          android:layout_gravity="center"
+          android:layout_marginBottom="50dp"
+          app:srcCompat="@drawable/elegirotro" />
+    </LinearLayout>
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
