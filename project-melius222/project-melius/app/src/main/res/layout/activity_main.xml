@@ -94,86 +94,24 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/imageView_statistics"
-            android:layout_width="193dp"
-            android:layout_height="205dp"
-            android:src="@drawable/statistics"
+            android:id="@+id/imageView_chatbot"
+            android:layout_width="161dp"
+            android:layout_height="172dp"
+            android:src="@drawable/chatbot"
 
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView_Chatbot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/comicneue_bold"
-            android:text="Estadísticas"
+            android:text="Chatbot"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="194dp"
-        android:layout_height="96dp"
-        android:background="#F8BBD0"
-        android:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.965"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:id="@+id/textoRango"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginBottom="20dp"
-            android:text="Rango: "
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/comicneue_bold"
-            android:text="TextView"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.288"
-            app:layout_constraintStart_toEndOf="@+id/textoRango" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:text="Puntos:"
-            app:layout_constraintBottom_toTopOf="@+id/textoRango"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.432" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/comicneue_bold"
-            android:text="TextView"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView6"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.288"
-            app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.463" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -194,7 +132,7 @@
             android:layout_width="199dp"
             android:layout_height="170dp"
             android:layout_gravity="center"
-            android:src="@drawable/study_methods"></ImageView>
+            android:src="@drawable/mapa"></ImageView>
 
         <TextView
             android:id="@+id/textView2"
@@ -202,7 +140,40 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/comicneue_bold"
-            android:text="Métodos de Estudio"
+            android:text="Mapa"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView_statistics"
+            android:layout_width="193dp"
+            android:layout_height="205dp"
+            android:src="@drawable/buscador"
+
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/comicneue_bold"
+            android:text="Buscador"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
