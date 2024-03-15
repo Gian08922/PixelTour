@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/i"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blancoFlow"
+    tools:context=".MainActivity">
+
+    <!-- Logo bueno -->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ajustesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/cremaFlow"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@color/cremaFlow"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Componente LinearLayout para la fecha y la imagen de ajustes -->
+
+    <!-- Componente AppBarLayout -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="411dp"
+        android:layout_height="72dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajustesLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <!-- Fecha -->
+        <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/comicneue_light"
+            android:text="10/04/2023"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_settings"
+            android:layout_width="288dp"
+            android:layout_height="63dp"
+            android:layout_gravity="bottom"
+
+            android:padding="5dp"
+            android:src="@drawable/ic_settings" />
+
+    </LinearLayout>
+
+    <!-- Imagen botón "Métodos de Estudio" -->
+
+    <!-- Imagen botón "Estadísticas" -->
+
+
+    <!-- Componente LinearLayout para Rango y Puntos -->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.746"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/botonChatbot"
+            android:layout_width="161dp"
+            android:layout_height="172dp"
+            android:src="@drawable/flowmodoro_image"
+
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView_Chatbot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/comicneue_bold"
+            android:text="Chatbot"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.017"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/botonMapa"
+            android:layout_width="199dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:src="@drawable/flowmodoro_image"></ImageView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/comicneue_bold"
+            android:text="Mapa"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/botonBuscador"
+            android:layout_width="193dp"
+            android:layout_height="205dp"
+            android:src="@drawable/flowmodoro_image"
+
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/comicneue_bold"
+            android:text="Buscador"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blancoFlow"
+    tools:context=".Registro"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ajustesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/cremaFlow"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@color/cremaFlow"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/comicneue_bold"
+            android:text="@string/Register"
+            android:textColor="@color/marronFlow"
+            android:textSize="30dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/username"
+                android:textColor="@color/marronFlow"></TextView>
+
+            <EditText
+                android:id="@+id/nombre_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/username_hint"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/email"
+                android:textColor="@color/marronFlow"></TextView>
+            <EditText
+                android:id="@+id/correo_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:text="@string/password"
+                android:textColor="@color/marronFlow"></TextView>
+            <EditText
+                android:id="@+id/contraseña_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="@string/Nivel_Estudios"
+                android:textColor="@color/marronFlow"></TextView>
+            <EditText
+                android:id="@+id/nivelEstudios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/Nivel_hint"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:text="@string/Centro_Estudios"
+                android:textColor="@color/marronFlow"></TextView>
+            <EditText
+                android:id="@+id/Centro_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/Centro_hint"
+                android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/terms_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/TerminosCondiciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/marronFlow"
+                android:text="@string/Go_to_TerminosyCondiciones" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/boton_resgistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:background="@color/cremaFlow"
+            android:text="@string/Register"
+            android:padding="14dp"
+            android:fontFamily="@font/comicneue_bold"/>
+
+        <TextView
+            android:id="@+id/go_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/comicneue_bold"
+            android:text="@string/Goto_Login"
+            android:textColor="@color/marronFlow"
+            android:textSize="16dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

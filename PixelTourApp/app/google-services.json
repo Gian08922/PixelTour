@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "82015172185",
+    "project_id": "pixeltour-ab5ff",
+    "storage_bucket": "pixeltour-ab5ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82015172185:android:5ba548de668d06d92d2348",
+        "android_client_info": {
+          "package_name": "com.example.pixeltourapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-hEeCuvU_InEFkWF_nyUZTs3Q0-k2_oE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
