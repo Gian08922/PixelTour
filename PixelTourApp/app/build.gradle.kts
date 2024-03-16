@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.androidApplication)
     id("com.google.gms.google-services") version "4.4.1" apply true
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    //id("com.google.android.libraries.platform.secrets-gradle-plugin")
+
 }
 
 android {
@@ -60,6 +62,8 @@ dependencies {
     implementation ("com.google.firebase:firebase-auth-ktx")
     implementation ("com.google.firebase:firebase-database-ktx")
     implementation ("com.google.firebase:firebase-firestore-ktx")
+
     implementation ("com.google.android.gms:play-services-auth:20.5.0")
+    implementation ("com.google.android.gms:play-services-maps:18.0.1")
 
 }
