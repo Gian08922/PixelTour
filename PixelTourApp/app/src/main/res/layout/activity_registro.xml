@@ -90,31 +90,6 @@
                 android:hint="@string/password_hint"
                 android:inputType="textPassword" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:text="@string/Nivel_Estudios"
-                android:textColor="@color/marronFlow"></TextView>
-            <EditText
-                android:id="@+id/nivelEstudios"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:hint="@string/Nivel_hint"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:text="@string/Centro_Estudios"
-                android:textColor="@color/marronFlow"></TextView>
-            <EditText
-                android:id="@+id/Centro_usuario"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="@string/Centro_hint"
-                android:inputType="text" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearLayout"

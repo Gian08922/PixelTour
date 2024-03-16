@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         // Obtener referencia al botón de ajustes
         val btnSettings = findViewById<ImageView>(R.id.btn_settings)
         val btnMapa = findViewById<ImageView>(R.id.botonMapa)
-        val btnChatbot = findViewById<ImageView>(R.id.botonChatbot)
         val btnBuscador = findViewById<ImageView>(R.id.botonBuscador)
 
 

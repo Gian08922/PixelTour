@@ -95,10 +95,8 @@ class Registro : AppCompatActivity() {
         val username = findViewById<EditText>(R.id.nombre_usuario)
         val email = findViewById<EditText>(R.id.correo_usuario)
         val password = findViewById<EditText>(R.id.contraseña_usuario)
-        val nivelEstudios = findViewById<EditText>(R.id.nivelEstudios)
-        val centroEstudios = findViewById<EditText>(R.id.Centro_usuario)
 
-        if(username.text.isEmpty() || email.text.isEmpty() || password.text.isEmpty() || nivelEstudios.text.isEmpty() || centroEstudios.text.isEmpty()){
+        if(username.text.isEmpty() || email.text.isEmpty() || password.text.isEmpty()){
             Toast.makeText(this,"Rellene los campos por favor",Toast.LENGTH_SHORT).show()
             return
         }
@@ -107,8 +105,6 @@ class Registro : AppCompatActivity() {
         val inputUsername = username.text.toString()
         val inputEmail = email.text.toString()
         val inputPassword = password.text.toString()
-        val inputNivelEstudios = nivelEstudios.text.toString()
-        val inputCentroEstudios = centroEstudios.text.toString()
 
         auth.createUserWithEmailAndPassword(inputEmail,inputPassword)
             .addOnCompleteListener(this) { task ->
@@ -120,8 +116,6 @@ class Registro : AppCompatActivity() {
                         "userNickname" to inputUsername,
                         "user" to inputEmail,
                         "dateRegister" to dateRegister,
-                        "NivelEstudios" to inputNivelEstudios,
-                        "CentroEstudios" to inputCentroEstudios,
                     ))
                     val intent = Intent(this, MainActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
