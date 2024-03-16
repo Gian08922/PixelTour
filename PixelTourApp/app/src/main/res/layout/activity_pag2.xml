@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pag2">
+
+  <!-- Ajusta el máximo según tus necesidades -->
+  android:progress="6" <!-- Inicia con un valor por defecto si es necesario --><![CDATA[
+    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+  <ImageView
+      android:id="@+id/imageView5"
+      android:layout_width="93dp"
+      android:layout_height="78dp"
+      android:layout_marginTop="28dp"
+      android:scaleType="fitXY"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/icon" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="232dp"
+      android:text="Cuantos dias quiere estar :"
+      android:textSize="20sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="106dp"
+      android:layout_height="41dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="48dp"
+      android:text="Eliga sector"
+      android:textSize="20sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+  <Spinner
+      android:id="@+id/spinnerOpciones"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="8dp"
+      android:entries="@array/opciones_array"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+  <SeekBar
+      android:id="@+id/seekBar"
+      android:layout_width="299dp"
+      android:layout_height="51dp"
+      android:layout_centerInParent="true"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="8dp"
+      android:max="20"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <TextView
+      android:id="@+id/seekBarValue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/seekBar"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="224dp"
+      android:layout_marginEnd="124dp"
+      android:text="6"
+      android:textSize="24sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView11"
+      android:layout_width="324dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="36dp"
+      android:lineSpacingExtra="10sp"
+      android:text="Seleccione filtros"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:textSize="34sp"
+      android:typeface="sans"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.494"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+  <Button
+      android:id="@+id/BotonRuta"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:text="Crear Ruta"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextPrecio" />
+
+  <TextView
+      android:id="@+id/textView12"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:text="Cuanto tiene pensado gastarse"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.218"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spinnerOpciones" />
+
+  <EditText
+      android:id="@+id/editTextPrecio"
+      android:layout_width="198dp"
+      android:layout_height="44dp"
+      android:layout_marginStart="28dp"
+      android:layout_marginTop="8dp"
+      android:hint="€"
+      android:inputType="numberDecimal"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView12"
+      app:prefixText="€ " />
+
+  <!-- Inicia con el texto que refleje el valor por defecto del SeekBar --><![CDATA[
+    android:textSize="18sp"
+    />
+
+    ]]>
+</androidx.constraintlayout.widget.ConstraintLayout>

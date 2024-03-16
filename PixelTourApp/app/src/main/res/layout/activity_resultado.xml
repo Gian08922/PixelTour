@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ADFFF1E4">
+
+    <SearchView
+        android:layout_width="319dp"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="387dp"
+        android:layout_height="665dp"
+        android:background="#BAFFF1E4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tituloRuta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/andika"
+                android:text="Ruta gastronómica por Vejer de la Frontera"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Mañana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/bellota"
+                android:paddingLeft="20px"
+                android:text="Mañana"
+                android:textSize="16sp"
+                tools:text="Por la mañana" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Actividad1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="- Desayuno Cafetería local:" />
+
+                    <TextView
+                        android:id="@+id/Descripción1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="1"
+                        android:text="Café con leche más tostada con acete de oliva virgen extra y tomate. El desayuno típico de Vejer que te dejará con ganas de repetir." />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Actividad2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="- Tapas en la plaza de España:" />
+
+                        <TextView
+                            android:id="@+id/Descripción2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:text="La mejor actividad para abrir el apetito y probar gran variedad de platos como el cazón en adobo, croquetas de choco (sepia), verenjenas con miel de caña." />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Actividad3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:text="- Comida en un restaurante tradicional" />
+
+                            <TextView
+                                android:id="@+id/Descripción3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_weight="1"
+                                android:text="Tras abrir el estómago con el aperitivo te recomendamos lo siguiente: Arroz con pollo campero o guiso de rabo de toro. Platos típicos de la zona que no te defraudarán." />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/Tarde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/bellota"
+                android:paddingLeft="20px"
+                android:text="Tarde"
+                android:textSize="16sp"
+                tools:text="Por la tarde" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Actividad4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="- Degustación de vinos (bodega local):" />
+
+                    <TextView
+                        android:id="@+id/Descripción4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="1"
+                        android:text="Si lo que quieres es degustar uno de los productos más destacados de Vejer, debes realizar una cata de vinos. Aquí tendrás que elegir entre vinos blancos de Palomino o tintos como el Tintilla de Rota " />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Actividad5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="- Merienda dulces tradicionales:" />
+
+                        <TextView
+                            android:id="@+id/Descripción5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:text="Si despues de la cata te apetece tomar un dulce, te recomendamos que pruebes los siguientes: Tortas de aceite, Pestiños y Alfajores." />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/Cena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/bellota"
+                android:paddingLeft="20px"
+                android:text="Cena"
+                android:textSize="16sp"
+                tools:text="Por la noche" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="149dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Actividad6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="- Cena en el casco antiguo:" />
+
+                    <TextView
+                        android:id="@+id/Descripción6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="1"
+                        android:text="Después de un largo día te apetece terminar el día con una cena elaborada, rica y con buenas vistas. Te recomendamos un restaurante como este donde puedes tomar Atún rojo de almadraba o Salmorejo con jamón ibérico." />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Actividad7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="- Coctail en una terraza con vistas:" />
+
+                        <TextView
+                            android:id="@+id/Descripción7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:text="Si te apetece tomar algo después de cenar, te recomendamos una terraza con vistas para tomarte el coctail que mas te guste." />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
