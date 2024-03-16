@@ -39,8 +39,8 @@
     <string name="Enviar_codigo">Recuperar Contraseña</string>
 
     //Terminos y condiciones
-    <string name="TerminosyCondiciones">Términos y Condiciones de Uso de la Aplicación Móvil Flowmodoro</string>
-    <string name="TerminoyCondicionesText1">La aplicación móvil Flowmodoro ("la aplicación") es propiedad de Flowmodoro LLC ("la compañía"). Al descargar, instalar y utilizar la aplicación, aceptas los siguientes términos y condiciones:</string>
+    <string name="TerminosyCondiciones">Términos y Condiciones de Uso de la Aplicación Móvil PixelTour</string>
+    <string name="TerminoyCondicionesText1">La aplicación móvil PixelTour es propiedad de PixelTour. Al descargar, instalar y utilizar la aplicación, aceptas los siguientes términos y condiciones:</string>
     <string name="TerminoyCondicionesText2Titulo">1. Uso de la aplicación: </string>
     <string name="TerminoyCondicionesText2">La aplicación está diseñada para ayudar a los usuarios a mejorar su productividad y concentración utilizando la técnica de Pomodoro. La aplicación se proporciona tal como está y la compañía no garantiza que la aplicación sea adecuada para cualquier propósito particular o que funcione sin errores o interrupciones. </string>
     <string name="TerminoyCondicionesText3Titulo">2. Contenido de la aplicación:</string>
@@ -57,7 +57,7 @@
     <string name="TerminoyCondicionesText8">Estos términos y condiciones constituyen el acuerdo completo entre el usuario y la compañía con respecto al uso de la aplicación. Cualquier modificación de estos términos y condiciones debe ser por escrito y firmada por ambas partes.</string>
     <string name="TerminoyCondicionesText9Titulo">8. Ley aplicable:</string>
     <string name="TerminoyCondicionesText9">Estos términos y condiciones se regirán e interpretarán de acuerdo con las leyes del gobierno de España, sin tener en cuenta sus disposiciones de conflicto de leyes.</string>
-    <string name="TerminoyCondicionesText10">Si tienes alguna pregunta o inquietud sobre estos términos y condiciones, por favor contáctanos a través de nuestro correo: flowmodoroteam@gmail.com.</string>
+    <string name="TerminoyCondicionesText10">Si tienes alguna pregunta o inquietud sobre estos términos y condiciones, por favor contáctanos a través de nuestro correo: pixeltourteam@gmail.com.</string>
     <string name="AceptarTerminos">Volver al registro</string>
 
     //Estadisticas
