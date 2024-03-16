@@ -99,7 +99,7 @@
             android:layout_width="199dp"
             android:layout_height="170dp"
             android:layout_gravity="center"
-            android:src="@drawable/flowmodoro_image"></ImageView>
+            android:src="@drawable/mapaesp"></ImageView>
 
         <TextView
             android:id="@+id/textView2"
@@ -128,9 +128,9 @@
 
         <ImageView
             android:id="@+id/botonBuscador"
-            android:layout_width="193dp"
-            android:layout_height="205dp"
-            android:src="@drawable/flowmodoro_image"
+            android:layout_width="155dp"
+            android:layout_height="171dp"
+            android:src="@drawable/lupa"
 
             tools:ignore="MissingConstraints" />
 
